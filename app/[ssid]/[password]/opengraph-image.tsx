@@ -2,8 +2,6 @@
 import { ImageResponse } from "next/og";
 import QRCode from "qrcode";
 
-export const runtime = "edge";
-
 type Props = {
   params: { ssid: string; password: string };
 };
