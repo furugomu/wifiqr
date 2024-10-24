@@ -13,5 +13,6 @@ export const generateMetadata = async ({ params }: Props) => {
   const { ssid } = await params;
   return {
     title: `Wi-Fi QR [${ssid}]`,
+    description: `QR code for Wi-Fi network "${ssid}"`,
   };
 };
