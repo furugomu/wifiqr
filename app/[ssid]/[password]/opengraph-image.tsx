@@ -2,6 +2,8 @@
 import { ImageResponse } from "next/og";
 import QRCode from "qrcode";
 
+export const runtime = "edge";
+
 type Props = {
   params: { ssid: string; password: string };
 };
@@ -9,7 +11,6 @@ export default async function Image({ params }: Props) {
   const { ssid, password } = await params;
   const value = `WIFI:T:WPA;S:${ssid};P:${password};;`;
   const rawSvg = await QRCode.toString(value);
-  // const dataUri = "data:image/svg+xml;base64," + btoa(rawSvg);
   const dataUri = "data:image/svg+xml;utf8," + rawSvg;
 
   return new ImageResponse(
