@@ -90,7 +90,7 @@ const Share = ({ ssid, password }: Props) => {
           readOnly
           className="w-full"
           disabled={disabled}
-          alia-label="Share URL"
+          aria-label="Share URL"
         />
         <Button onClick={handleCopy} disabled={disabled}>
           <MdShare className="w-6 h-6" />
