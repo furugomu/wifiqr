@@ -19,7 +19,7 @@ export const QR = ({ ssid: defaultSsid, password: defaultPassword }: Props) => {
   }, [ssid, password]);
 
   return (
-    <main className="w-[32rem] mx-auto">
+    <main className="container max-w-[32rem] mx-auto px-4">
       <div className="flex flex-col gap-4">
         <section className="flex flex-col gap-4">
           <Field label="SSID">
