@@ -1,10 +1,10 @@
 "use client";
 
 import QRCode from "qrcode";
-import { Input } from "@/components/ui/input";
+import { Input } from "../components/ui/input";
 import { useRef, useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
+import { Button } from "../components/ui/button";
+import { useToast } from "../hooks/use-toast";
 import { MdShare } from "react-icons/md";
 
 type Props = { ssid: string; password: string };
